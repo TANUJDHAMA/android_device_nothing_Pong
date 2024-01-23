@@ -8,4 +8,72 @@
             <instance>default</instance>
         </interface>
     </hal>
+<hal format="aidl" optional="true">
+    <name>android.hardware.bluetooth.audio</name>
+    <version>3</version>
+    <interface>
+        <name>IBluetoothAudioProviderFactory</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="aidl" optional="true">
+    <name>android.hardware.cas</name>
+    <interface>
+        <name>IMediaCasService</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="aidl" optional="true">
+    <name>android.hardware.drm</name>
+    <interface>
+        <name>IDrmFactory</name>
+        <instance>clearkey</instance>
+    </interface>
+</hal>
+<hal format="aidl" optional="true">
+    <name>android.hardware.nfc</name>
+    <interface>
+        <name>INfc</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="aidl" optional="true">
+    <name>android.hardware.power</name>
+    <version>3</version>
+    <interface>
+        <name>IPower</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="aidl" optional="true">
+    <name>android.hardware.wifi</name>
+    <interface>
+        <name>IWifi</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="aidl" optional="true">
+    <name>android.hardware.wifi.hostapd</name>
+    <interface>
+        <name>IHostapd</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="aidl" optional="true">
+    <name>android.hardware.wifi.supplicant</name>
+    <version>2</version>
+    <interface>
+        <name>ISupplicant</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="aidl" optional="true">
+    <name>vendor.qti.hardware.radio.ims</name>
+    <version>12</version>
+    <interface>
+        <name>IImsRadio</name>
+        <instance>imsradio0</instance>
+        <instance>imsradio1</instance>
+    </interface>
+</hal>
 </compatibility-matrix>
