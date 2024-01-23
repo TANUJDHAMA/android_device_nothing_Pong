@@ -300,6 +300,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.system.net.netd@1.1.vendor
 
+# FaceSense
+PRODUCT_SYSTEM_PROPERTIES += \
+    ro.face.sense_service.camera_id=1
+
 # NFC
 PRODUCT_PACKAGES += \
     android.hardware.nfc-service.nxp \
