@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2023 The LineageOS Project
+# Copyright (C) 2023 The Android Open Source Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -11,10 +11,22 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from Pong device
 $(call inherit-product, device/nothing/Pong/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common AOSP stuff.
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_Pong
+# Environment Flags
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_INCLUDE_STOCK_ARCORE := true
+TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
+
+#Pixefy
+PIXEFY_MAINTAINER := TanujD
+CUSTOM_BUILD_TYPE := OFFICIAL
+
+#Bootanimation
+TARGET_BOOT_ANIMATION_RES := 1080
+
+PRODUCT_NAME := aosp_Pong
 PRODUCT_DEVICE := Pong
 PRODUCT_MANUFACTURER := nothing
 PRODUCT_BRAND := Nothing
